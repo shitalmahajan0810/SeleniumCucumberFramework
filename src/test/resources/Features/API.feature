@@ -1,6 +1,6 @@
 Feature: Fake Store API
 
-
+#adding new scenario
   @GetAPI
   Scenario: Get store API all product
     Given endpoint is 'https://fakestoreapi.com/products'
