@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json"
         },
         monochrome = false,
-        tags = "@GetAPI1"
+        tags = "@GetAPI"
 )
 
 public class TestRunner  {

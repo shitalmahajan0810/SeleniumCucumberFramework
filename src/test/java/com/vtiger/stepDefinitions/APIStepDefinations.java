@@ -25,6 +25,15 @@ public class APIStepDefinations {
             }
             """;
 
+    String regBody1 = """
+            {
+              "userId": 1,
+              "id": 1,
+              "title": "Samsung",
+              "body": "Samsung Note Mobile"
+            }
+            """;
+
     String putReqBody = """
             {"title": "Samsung", "price": 50.99}
             """;
@@ -38,6 +47,7 @@ public class APIStepDefinations {
 
     @When("user send GET request")
     public void user_send_get_request() {
+
         this.response = RestAssured.given().get(endpoint);
     }
 
@@ -116,8 +126,8 @@ public class APIStepDefinations {
     public void user_send_post_request() {
 
 
-        response = RestAssured.given() .contentType("application/json").body(reqBody).log().all().post(endpoint);
-
+        response = RestAssured.given().contentType("application/json").body(reqBody).log().all().post(endpoint);
+        //response = RestAssured.given().contentType("application/json").body(reqBody).post(endpoint);
         response.prettyPrint();
 
 

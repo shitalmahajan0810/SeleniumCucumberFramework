@@ -16,6 +16,14 @@ Feature: Fake Store API
     Then status code is 200
     And validate response of single product
 
+
+  @GetAPI2
+  Scenario: Get store API one product
+    Given endpoint is 'https://jsonplaceholder.typicode.com/posts/1'
+    When user send GET request
+    Then status code is 200
+    And validate response of single product
+
     @Post
     Scenario: Create new product
       Given endpoint is "https://fakestoreapi.com/products"
