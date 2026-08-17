@@ -15,11 +15,6 @@ Feature: Login Functionality
         And click on login button
         Then the user can enter on login page only
 
-      #Scenario Outline: Examples:  run 1 scenario multiple times with different test data
-
-      #STep Parameterization
-
-
 
 
 
