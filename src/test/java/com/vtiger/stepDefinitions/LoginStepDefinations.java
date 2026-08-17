@@ -50,7 +50,8 @@ public class LoginStepDefinations extends BaseStepDefinations {
     @When("click on login button")
     public void clickLoginButton()
     {
-       lp.clickLoginBtn();
+
+        lp.clickLoginBtn();
     }
 
     @Then("the user can enter on Home page")
